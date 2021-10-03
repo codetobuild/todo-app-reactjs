@@ -1,9 +1,10 @@
 # TO DO - Reactjs project
 
-### This a to-do list app build with reactjs. This application  currently only a front-end and it's under developemnt.
+### This a to-do list app build with reactjs. This application currently only a front-end and it's under developemnt.
 
+Demo: [View Project on Live](https://todo-nokha.netlify.app/)
 
-***
+---
 
 ### `npm start`
 
