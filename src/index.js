@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { createContext } from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+
+export const Theme = createContext();
+const theme = {
+  bg: "#082032",
+  todoCard: "#30475E",
+  todoList: "#6D8299",
+  doneList: "#304f66",
+  button: "#1BDD80",
+  text: "#fff",
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Theme.Provider value={theme}>
+      <App />
+    </Theme.Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
